@@ -1,0 +1,101 @@
+<div class="detail_userList">
+    <ul class="list-unstyled">
+        <li ng-repeat="user in userList">
+            <div class="headpic">
+                <img ng-src="hidir/{{user.hipath}}" alt=""/>
+            </div>
+            <div class="un">{{user.uname}}</div>
+            <div class="levelStatus">活跃用户</div>
+            <div class="addAttention"><span class="glyphicon glyphicon-plus"></span></div>
+        </li>
+    </ul>
+</div>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">SHAREFUN</div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav nav navbar-right">
+                <li><a href="#/main">首页</a></li>
+                <li><a href="#/community">分享社区 <span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="#" onclick="event.preventDefault()"><span class="glyphicon glyphicon-user"></span>:{{uname}}</a>
+                </li>
+                <li><a href="#" ng-click="logout()">退出账号 <span class="glyphicon glyphicon-off"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="detail_jumbotron">
+        <div class="header">
+            <h3><span style="font-family:Simhei">来趣分享您选择对了地方</span>
+                <span class="glyphicon glyphicon-tag" style="color:#ccc"></span></h3>
+            <a style="text-decoration: none" href="#" class="subscribe">
+                <span class="glyphicon glyphicon-plus"></span>
+                <span >订阅</span>
+            </a>
+        </div>
+        <div class="body">
+            <h4>和您的趣友分享最纯真的快乐 <span class="glyphicon glyphicon-leaf"></span></h4>
+            <p class="text-justify">
+                郑重声明：现趣分享网站急需web前端工程师若干（nodejs精通者、AngularJS+JQM开发手机端）,有Android开发经验者优先,数据库维护人员若干。
+            </p>
+            <a href="#" onclick="event.preventDefault();" class="btn">点击了解</a>
+        </div>
+        <div class="footer">
+            <span><a href="#">最新</a></span>
+            <span><a href="#">热门</a></span>
+            <span><a href="#">精选</a></span>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="detail_msg">
+        <div class="detail_hi">
+            <img ng-src="hidir/{{detailMsg.hipath}}" alt=""/>
+        </div>
+        <div class="detail_body">
+            <h4 style="color:rgba(0,0,0,.5)">hzs</h4>
+            <div class="detail_middle">
+                <div class="detail_left">
+                    <img ng-src="upload/{{detailMsg.path}}" alt=""/>
+                </div>
+                <div class="detail_img_describe">
+                    <p>{{detailMsg.imgdescribe}}</p>
+                </div>
+            </div>
+            <div class="detail_footer">
+                <span style="color:#ccc" class="glyphicon glyphicon-tag"></span>
+                <span class="img_status"><a  href="#">最新</a></span>
+                <a style="text-decoration: none" class="hotmeter" href="#">热度({{detailMsg.zan}})</a>
+                <a style="text-decoration: none" class="comment" href="#">评论</a>
+                <span class="zan"><a id="heart" ng-click="givezan()" href="#"> <span class="glyphicon glyphicon-heart"></span></a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <form class="mycomment form-horizontal">
+        <div class="form-group">
+            <div class="col-xs-11">
+                <input id="youComment" ng-model="mycomment" type="text" placeholder="留下您的评论吧。。" class="form-control"/>
+            </div>
+            <div class="col-xs-1">
+                <a ng-click="publish()" style="margin-left: -30px;" href="#" class="btn btn-info">发布</a>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <div class="commentArea" ng-repeat="comment in  commentList">
+        <div class="comment_hi">
+            <img ng-src="hidir/{{comment.hipath}}" alt=""/>
+        </div>
+        <p>{{comment.uname}}:{{comment.userComment}}</p>
+        <span class="response"><a href="">回复</a></span>
+    </div>
+</div>
+<div class="detaile_alertMsg">
+    {{alertMsg}}
+</div>

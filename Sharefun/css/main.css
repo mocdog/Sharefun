@@ -1,0 +1,346 @@
+@media screen and (min-width: 992px) {
+    body {
+        margin-top: 50px;
+    }
+
+    .navbar {
+        background-color: #ac2925;
+        border: 1px solid #ac2925;
+    }
+
+    .navbar .container .navbar-header .navbar-brand, .navbar .container .navbar-collapse .navbar-nav li a {
+        color: #fff;
+        font-family: Simhei;
+    }
+
+    .imgArea {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .clearPadding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .show_area {
+        width: 100%;
+        height: 300px;
+        padding-left: 10%;
+        margin-bottom: 10px;
+    }
+
+    .show_area .left {
+        float: left;
+        height: 100%;
+        width: 40%;
+    }
+
+    .show_area .right {
+        float: left;
+        height: 100%;
+        width: 40%;
+        padding-left: 50px;
+    }
+
+    .text_1 {
+        color: #46b8da;
+        font-family: Simhei;
+        height: 100px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .text_1 .textAnimate {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .text_1 .textAnimate .t1, .t2, .t3, .t4, .t5 {
+        position: absolute;
+        font-size: 30px;
+    }
+
+    .text_1 .textAnimate .t1 {
+        left: 604px;
+        top: 0px;
+    }
+
+    .text_1 .textAnimate .t2 {
+        left: 639px;
+        top: 0px;
+    }
+
+    .text_1 .textAnimate .t3 {
+        left: 674px;
+        top: 0px;
+    }
+
+    .text_1 .textAnimate .t4 {
+        left: 709px;
+        top: 0px;
+    }
+
+    .text_1 .textAnimate .t5 {
+        left: 744px;
+        top: 0px;
+    }
+
+    .text_1 .mytoggle {
+        position: relative;
+        height: 50px;
+        width: 100%;
+    }
+
+    .text_1 .mytoggle a {
+        position: absolute;
+        font-size: 20px;
+        left: 50%;
+        z-index: 2;
+    }
+
+    #ripple {
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -24px;
+        z-index: 1;
+    }
+
+    .mycarousel {
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mycarousel .img1, .img2, .img3 {
+        float: left;
+    }
+
+    .slide {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1200px;
+        height: 200px;
+    }
+
+    .cloneSilde {
+        position: absolute;
+        left: 1200px;
+        top: 0;
+        width: 1200px;
+        height: 200px;
+    }
+
+    .mask {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0px;
+        top: 50px;
+        width: 1366px;
+        height: 667px;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .mask .showBigImg {
+        width: 600px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .mask .myclose {
+        position: absolute;
+        z-index: 1001;
+        left: 960px;
+        top: 35px;
+        color: #ffffff;
+        font-size: 40px;
+        text-decoration: none;
+    }
+
+    .imgArea2 {
+        background-color: #fff;
+    }
+
+    .child1, .child3 {
+        padding-left: 285px;
+    }
+
+    .row1, .row2 {
+        margin-bottom: 5px;
+    }
+
+    .mypagination {
+        padding-left: 130px;
+    }
+
+    .backtop {
+        display: none;
+        position: fixed;
+        bottom: 50px;
+        right: 10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        background-color: #46b8da;
+        padding-left: 22px;
+        padding-top: 12px;
+    }
+
+    .backtop a {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .login_register {
+        display: none;
+        width: 1366px;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #f5f5f5;
+        padding-top: 10px;
+        font-family: Simhei;
+        z-index: 2000;
+    }
+    .logmask {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0px;
+        top: 50px;
+        width: 1366px;
+        height: 667px;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .logmask .logme {
+        border-radius: 8px;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: #f0ad4e;
+    }
+
+    .registermask {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0px;
+        top: 50px;
+        width: 1366px;
+        height: 667px;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .registermask .registerme {
+        border-radius: 8px;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: #f0ad4e;
+    }
+
+    .uploadmask {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0px;
+        top: 50px;
+        width: 1366px;
+        height: 667px;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .uploadmask .uploadme {
+        border-radius: 8px;
+        width: 300px;
+        height: 550px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: #fff;
+    }
+
+    .uploadmask .uploadme .header {
+        width: 100%;
+        height: 50px;
+        font-family: Simhei;
+        color: #449d44;
+        padding-left: 40px;
+        padding-top: 2px;
+    }
+    .uploadmask .uploadme .header h3{
+        margin-top: 10px;
+    }
+    .uploadmask .uploadme .body {
+        width: 100%;
+        height: 450px;
+        font-family: Simhei;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .decoration {
+        position: relative;
+    }
+
+    .decoration #uimg {
+        position: absolute;
+        left: 8px;
+        top: 5px;
+        z-index: 100;
+    }
+    .decorationIcon{
+        z-index:1000;
+        position: absolute;
+        border-radius: 4px;
+        padding-left: 8px;
+        padding-top: 5px;
+    }
+    .imgpreview{
+        width:100%;
+        height:280px;
+        margin-bottom: 10px;
+        background-color: #8c8c8c;
+        border-radius: 4px;
+        position: relative;
+    }
+    .imgpreview .smIcon{
+        position: absolute;
+        left:110px;
+        top:110px;
+        font-size: 60px;
+        z-index:1000;
+    }
+    .imgpreview .viewport{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:280px;
+        z-index:1030;
+    }
+    .imgpreview .viewport img{
+        height:100%;
+        widht:100%;
+    }
+    .alertMsg{
+        position: fixed;
+        top:0px;
+        left:638px;
+        width:100px;
+        height:50px;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-family: Simhei;
+        color:#46b8da;
+    }
+}

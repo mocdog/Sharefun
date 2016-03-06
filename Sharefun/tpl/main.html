@@ -1,0 +1,211 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">SHAREFUN</div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav nav navbar-right">
+                <li><a href="#/main">首页</a></li>
+                <li><a href="#" ng-click="jumpCommunity()">分享社区 <span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="#" ng-click="logout()">退出账号 <span class="glyphicon glyphicon-off"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="border">
+    <div class="container-fluid imgArea">
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="img/bg3.jpg" alt=""/>
+            </div>
+            <div class="col-xs-8">
+                <div class="row">
+                    <div class="col-xs-4"><img src="img/bg1.jpg" alt=""/></div>
+                    <div class="col-xs-8 clearPadding"><img src="img/bg5.jpg" alt=""/></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-push-8 clearPadding"><img src="img/bg4.jpg" alt=""/></div>
+                    <div class="col-xs-8 col-xs-pull-4"><img src="img/bg2.jpg" alt=""/></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #fff;width:100%"><canvas id="record" width="1366" height="200"></canvas></div>
+    <div class="text_1">
+        <div class="textAnimate">
+            <span class="t1">S</span>
+            <span class="t2">H</span>
+            <span class="t3">A</span>
+            <span class="t4">R</span>
+            <span class="t5">E</span>
+        </div>
+        <!--<div class="mytoggle">-->
+            <!--<a id="mytoggle"><span class="glyphicon glyphicon-hand-up"></span></a>-->
+            <!--<canvas id="ripple" width="70" height="70"></canvas>-->
+        <!--</div>-->
+    </div>
+    <div class="container-fluid" style="background-color: #fff">
+        <div class="mycarousel">
+            <div class="slide">
+            </div>
+            <div class="cloneSilde">
+            </div>
+        </div>
+    </div>
+    <div class="mask">
+        <div class="showBigImg">
+            <a href="#" class="myclose">&times;</a>
+        </div>
+    </div>
+    <div class="container-fluid imgArea2" style="padding-top:20px">
+        <div class="row row1">
+            <div class="col-xs-6 child1">
+                <img src="img/footer01.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 child2">
+                <img src="img/footer02.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="col-xs-6 child3">
+                <img src="img/footer03.jpg" alt=""/>
+            </div>
+            <div class="col-xs-6 child4">
+                <img src="img/footer04.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4 mypagination">
+                <ul class="pagination">
+                    <li><a onclick="event.preventDefault()" href="#">&laquo;</a></li>
+                    <li onclick="event.preventDefault()" class="active"><a href="#">1</a></li>
+                    <li onclick="event.preventDefault()"><a href="#">2</a></li>
+                    <li onclick="event.preventDefault()"><a href="#">3</a></li>
+                    <li onclick="event.preventDefault()"><a href="#">4</a></li>
+                    <li onclick="event.preventDefault()"><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="backtop">
+    <a href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
+</div>
+<!--<div class="login_register" ng-show="!isLog">-->
+    <!--<div class="row">-->
+        <!--<div class="col-xs-3 col-xs-offset-3">-->
+            <!--<a href="#" onclick="event.preventDefault();$('.logmask').show()" class="btn btn-info btn-block">登录</a>-->
+        <!--</div>-->
+        <!--<div class="col-xs-3">-->
+            <!--<a href="#" onclick="event.preventDefault();$('.registermask').show()"-->
+               <!--class="btn btn-success btn-block">注册</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="logmask">-->
+    <!--<div class="logme">-->
+        <!--<div class="panel">-->
+            <!--<div class="panel-heading">-->
+                <!--<a href="#" onclick="event.preventDefault();$('.logmask').hide()"><span style="font-size: 20px"-->
+                                                                                        <!--class="pull-right">&times;</span></a>-->
+
+                <!--<h3 style="font-family: Simhei">趣分享用户登录</h3>-->
+            <!--</div>-->
+            <!--<div class="panel-body">-->
+                <!--<form>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="uname" class="sr-only">用户名:</label>-->
+                        <!--<input ng-model="uname" class="form-control" placeholder="用户名" type="text" id="uname" name="uname" required/>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="upwd" class="sr-only">密码:</label>-->
+                        <!--<input ng-model="upwd" class="form-control" placeholder="密码" type="password" id="upwd" name="upwd" required/>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<button ng-click="login()" id="login" class="btn btn-info btn-block">-->
+                            <!--登录-->
+                        <!--</button>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="registermask">-->
+    <!--<div class="registerme">-->
+        <!--<div class="panel">-->
+            <!--<div class="panel-heading">-->
+                <!--<a href="#" onclick="event.preventDefault();$('.registermask').hide()"><span style="font-size: 20px"-->
+                                                                                             <!--class="pull-right">&times;</span></a>-->
+
+                <!--<h3 style="font-family: Simhei">趣分享用户注册</h3>-->
+            <!--</div>-->
+            <!--<div class="panel-body">-->
+                <!--<form>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="rname" class="sr-only">用户名:</label>-->
+                        <!--<input ng-model="rname" class="form-control" placeholder="用户名" type="text" id="rname" name="rname" required/>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="rpwd" class="sr-only">密码:</label>-->
+                        <!--<input ng-model="rpwd" class="form-control" placeholder="密码" type="password" id="rpwd" name="rpwd" required/>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="tel" class="sr-only">电话号:</label>-->
+                        <!--<input ng-model="tel" class="form-control" placeholder="电话号" type="number" id="tel" name="tel" required/>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="sex" class="sr-only">性别:</label>-->
+                        <!--<input ng-model="sex" class="form-control" placeholder="性别" type="text" id="sex" name="sex" list="usex" required/>-->
+                        <!--<datalist id="usex">-->
+                            <!--<option value="男"></option>-->
+                            <!--<option value="女"></option>-->
+                        <!--</datalist>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<button ng-click="register()" id="register" class="btn btn-success btn-block">-->
+                            <!--注册-->
+                        <!--</button>-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="uploadmask">
+    <div class="uploadme">
+        <div class="header">
+            <a href="#" onclick="event.preventDefault();$('.uploadmask').hide()"><span style="font-size: 20px"
+                                                                                       class="pull-right">&times;</span></a>
+            <h3><span class="label label-danger">new</span> SHARE照片 <span style="color:#46b8da"
+                                                                          class="glyphicon glyphicon-camera"></span>
+            </h3>
+        </div>
+        <div class="body">
+            <form id="upload">
+                <div class="form-group">
+                    <label for="uimg">上传我的照片到社区</label>
+
+                    <div class="decoration">
+                        <span class="decorationIcon" style="width:80px;height:34px;background-color: #000;color:#fff;">
+                            请选择文件
+                        </span>
+                        <input type="text" class="form-control"/>
+                        <input required ng-model="imgPath" type="file" id="uimg" name="uimg"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input required ng-model="imgdescribe" type="text" class="form-control" id="describe" name="describe" placeholder="给你您的照片添加一句简短的描述..."/>
+                </div>
+            </form>
+            <div class="imgpreview">
+                <div class="viewport"></div>
+                <span class="smIcon glyphicon glyphicon-camera"></span>
+            </div>
+            <a href="#" ng-click="upload()" class="submit btn btn-warning btn-block">确认上传</a>
+        </div>
+    </div>
+</div>
+<div class="alertMsg">
+   {{alertMsg}}
+</div>

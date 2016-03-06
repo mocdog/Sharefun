@@ -1,0 +1,308 @@
+@media screen and (min-width: 992px) {
+    .detail_msg {
+        width:800px;
+        height:300px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .detail_hi{
+        position: absolute;
+        width:64px;
+        height:64px;
+        top:0;
+        left:0;
+    }
+    .detail_hi img{
+        width:100%;
+        height:100%;
+    }
+    .detail_body {
+        width: 600px;
+        height: 300px;
+        background-color: #fff;
+        margin-left: 100px;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        box-shadow: 3px 3px #ccc;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .detail_middle{
+        width:550px;
+        height:180px;
+        margin-bottom: 10px;
+    }
+    .detail_middle .detail_left{
+        width:178px;
+        height:178px;
+    }
+    .detail_middle .detail_left img{
+        width:100%;
+        height:100%;
+    }
+    .detail_img_describe{
+        width:370px;
+        height:178px;
+        position: absolute;
+        top:60px;
+        left:300px;
+        padding-left: 20px;
+        font-family: Simhei,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .detail_footer{
+        padding-top: 3px;
+        position: relative;
+        height:30px;
+        width:550px;
+    }
+    .img_status{
+        display: inline-block;
+        width:50px;
+        height:20px;
+        background-color: #9CB8D4;
+        padding-left: 10px;
+        padding-top: 3px;
+        border-radius: 4px;
+        font-size:10px;
+        font-family: Simhei;
+
+    }
+    .zan{
+        position: absolute;
+        right: 0;
+        top:3px;
+        font-size: 20px;
+    }
+    .zan a{
+        color:#ccc;
+    }
+    .zan a:hover{
+        color:#ac2925;
+    }
+    .hotmeter{
+        position: absolute;
+        right:80px;
+        top:4px;
+        color:#8c8c8c;
+        font-family: Simhei;
+    }
+    .comment{
+        position: absolute;
+        right:40px;
+        top:4px;
+        color:#8c8c8c;
+        font-family: Simhei;;
+    }
+    .img_status a{
+        text-decoration: none;
+        color:#fff;
+    }
+    .detail_jumbotron {
+        width: 600px;
+        height: 300px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .detail_jumbotron .header {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        border-bottom: 1px solid #B8B7B8;
+        margin-bottom: 0px;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+
+    .detail_jumbotron .body {
+        width: 100%;
+        height: 170px;
+        border-left: 1px solid #B8B7B8;
+        border-right: 1px solid #B8B7B8;
+        border-bottom: 1px solid #B8B7B8;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: Simhei;
+    }
+
+    .detail_jumbotron .body p {
+        margin-top: 20px;
+    }
+
+    .detail_jumbotron .body a {
+        background-color: #9DC000;
+        color: #fff;
+    }
+
+    .detail_jumbotron .body a:hover {
+        background-color: limegreen;
+    }
+
+    .detail_jumbotron .footer {
+        width: 100%;
+        height: 50px;
+        border-left: 1px solid #B8B7B8;
+        border-right: 1px solid #B8B7B8;
+        border-bottom: 1px solid #B8B7B8;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    .detail_jumbotron .footer span {
+        margin-left: 10px;
+    }
+
+    .detail_jumbotron .footer a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .detail_jumbotron .footer span:first-child a {
+        color: #46b8da;
+    }
+
+    .detail_jumbotron .footer span:first-child a:hover {
+        color: #B8B7B8;
+    }
+
+    .detail_jumbotron .footer a:hover {
+        color: #B8B7B8;
+    }
+
+    .subscribe {
+        position: absolute;
+        right: 20px;
+        top: 27px;
+        width: 57px;
+        height: 26px;
+        background-color: #646464;
+        border-radius: 4px;
+        color: #ccc;
+        font-family: Simhei;
+        padding-top: 3px;
+        padding-left: 3px;
+    }
+
+    .subscribe:hover {
+        color: #fff;
+    }
+
+    .detail_userList {
+        position: fixed;
+        top: 90px;
+        right: 150px;
+        width: 200px;
+        background-color: #F3F3F3;
+        border-left: 1px solid #DFDFDF;
+        border-right: 1px solid #DFDFDF;
+    }
+
+    .detail_userList ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .detail_userList ul li {
+        width: 100%;
+        height: 49px;
+        cursor: pointer;
+        border-bottom: 1px solid #DFDFDF;
+        position: relative;
+    }
+
+    .detail_userList ul li:hover {
+        background-color: #fff;
+    }
+
+    .detail_userList ul li .headpic {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .detail_userList ul li .headpic img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .detail_userList ul li .un {
+        position: absolute;
+        top: 5px;
+        left: 40px;
+        font-family: Simhei, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .detail_userList ul li .levelStatus {
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        color: #AAAAAA;
+        font-family: Simhei;
+        font-size: 12px;
+    }
+    .detail_userList ul li .addAttention {
+        position: absolute;
+        right: 8px;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+        color: #fff;
+        background-color: #B8B7B8;
+        padding-left: 3.5px;
+    }
+    .commentArea{
+        width:600px;
+        height:50px;
+        margin: 0 auto;
+        background-color: #fff;
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 45px;
+        padding-top: 18px;
+        font-size: 12px;
+        font-family: Simhei;
+    }
+    .comment_hi{
+        position: absolute;
+        top:15px;
+        left:15px;
+        height:20px;
+        width:20px;
+    }
+    .comment_hi img{
+        width:100%;
+        height:100%;
+    }
+    .response{
+        position: absolute;
+        right:15px;
+        top:12px;
+        font-size: 15px;
+    }
+    .mycomment{
+        width:600px;
+        margin: 0 auto;
+    }
+    .zan .hasZan{
+        color:#ac2925;
+    }
+    .detaile_alertMsg{
+        position: fixed;
+        top:0px;
+        left:588px;
+        width:200px;
+        height:50px;
+        text-align: center;
+        padding-top: 10px;
+        font-family: Simhei;
+        color:#46b8da;
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/css/community.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/hasHi.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/login.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/register.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/upload.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/uploadhi.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/myapp.js" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,190 @@
+@media screen and (min-width: 992px) {
+    /*.bg{*/
+        /*width:1366px;*/
+        /*height:667px;*/
+    /*}*/
+    .start_bg{
+        margin-top: -50px;
+        width:1366px;
+        height:667px;
+        background-color: #000000;
+        background:url("../img/start.jpg");
+        -webkit-filter:blur(8px);
+        position: relative;
+    }
+    .start_text{
+        width: 400px;
+        height:200px;
+        background-color:transparent;
+        position: absolute;
+        top:250px;
+        left:-400px;
+    }
+    .start_text .start_header{
+        width: 100%;
+        height:50px;
+        font-family: Simhei;
+        color:#fff;
+        padding-left: 40%;
+    }
+    .start_body{
+        width: 100%;
+        height:50px;
+        font-family: Simhei;
+        color:#fff;
+        padding-left: 30px;
+        font-size: 16px;
+    }
+    .start_footer{
+        width: 100%;
+        height:50px;
+        padding-left: 32%;
+    }
+    .start_bg_2{
+        background: url("../img/bg_1.jpg");
+        width:1366px;
+        height:667px;
+        margin-top: -50px;
+        position: relative;
+    }
+    .tag_author{
+        position: absolute;
+        left:5px;
+        top:5px;
+        width:100px;
+        height:100px;
+        padding: 0 auto;
+        color:#ccc;
+        font-size: 20px;
+    }
+    .logView{
+        width:40%;
+        height:40%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left: -20%;
+        margin-top: -10%;
+    }
+    .lv_header{
+        width:100%;
+        height:20%;
+    }
+    .lv_left , .lv_right{
+        float: left;
+        width:50%;
+        height:100%;
+        padding-top:10px;
+        padding-left: 22%;
+        font-size:20px ;
+    }
+    .lv_left a, .lv_right a{
+        width:50%;
+        height:100%;
+        text-decoration: none;
+        color:#cccccc;
+    }
+    .lv_left a:hover, .lv_right a:hover{
+        color:#fff;
+    }
+    .start_active{
+        background-color: #fff;
+    }
+    .start_active a{
+        color:#000;!important;
+    }
+    .start_active a:hover{
+        color:#ccc;!important;
+    }
+    .lv_body{
+        background-color: #fff;
+        width:100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .lv_body input{
+        width:100%;
+        border: 1px solid #D7D7D7;
+        height:50px;
+        padding-left: 10px;
+        padding-top: 5px;
+        background-color: #fff;
+    }
+    .lv_body button{
+        /*background-color:#AED505;*/
+        background-color: #ac2925;
+        border:none;
+        border-radius: 0px;
+        height:50px;
+        margin-top: 20px;
+        color:#fff;
+        font-size: 20px;
+    }
+    .lv_footer{
+        width:100%;
+        background-color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;;
+    }
+    .start_logo{
+        width:40%;
+        height:20%;
+        position: absolute;
+        top:5%;
+        left:50%;
+        margin-left: -20%;
+        font-size: 60px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: center;
+        color:#a94442;
+    }
+    .start_logo p{
+        width:100%;
+        font-size:30px;
+        text-align: center;
+        letter-spacing: 10px;
+        color:#fff;
+        font-family: Simhei;
+    }
+    .changeBg{
+        position: absolute;
+        right:20px;
+        bottom:10px;
+        width:200px;
+        height:20px;
+        text-align: center;
+        color:#ccc;
+    }
+    .lv_body_register{
+        display: none;
+        background-color: #fff;
+        width:100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .lv_body_register input{
+        width:100%;
+        border: 1px solid #D7D7D7;
+        height:50px;
+        padding-left: 10px;
+        padding-top: 5px;
+        background-color: #fff;
+    }
+    .lv_body_register span{
+
+    }
+    .lv_body_register button{
+        /*background-color:#AED505;*/
+        background-color: #5cb85c;
+        border:none;
+        border-radius: 0px;
+        height:50px;
+        margin-top: 20px;
+        color:#fff;
+        font-size: 20px;
+    }
+}

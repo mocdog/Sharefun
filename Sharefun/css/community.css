@@ -1,0 +1,392 @@
+@media screen and (min-width: 992px) {
+    body {
+        margin-top: 50px;
+        background-color: #EDEDEF;
+    }
+
+    .navbar {
+        background-color: #ac2925;
+        border: 1px solid #ac2925;
+    }
+
+    .navbar .container .navbar-header .navbar-brand, .navbar .container .navbar-collapse .navbar-nav li a {
+        color: #fff;
+        font-family: Simhei;
+    }
+
+    .header {
+        width: 800px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #B8B7B8;
+    }
+
+    .mynav {
+        width: 800px;
+        height: 100px;
+    }
+
+    .mynav li {
+        width: 200px;
+        height: 100px;
+        float: left;
+        padding-left: 55px;
+        padding-top: 30px;
+    }
+
+    .mynav li a {
+        width: 200px;
+        height: 100px;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: Simhei;
+        color: #000000;
+    }
+
+    .mynav li:hover {
+        border-bottom: 5px solid #5cb85c;
+    }
+
+    .mynav .hactive {
+        border-bottom: 5px solid #5cb85c;
+    }
+
+    .imgList {
+        width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #B8B7B8;
+    }
+
+    .imgList .mc {
+        width: 19.5%;
+        height: 150px;
+        margin: 0px;
+        display: inline-block;
+        margin-left: 3px;
+        margin-top: 3px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .imgList .mc img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mypagination1 {
+        padding-left: 50px;
+    }
+
+    .tag {
+        font-size: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 3px;
+        color: #ccc;
+        font-family: Simhei;
+        width: 100%;
+    }
+
+    .tag a {
+        background-color: #97B1CB;
+        color: #fff;
+        height: 20px;
+        padding: 0;
+        margin-bottom: 4px;
+        font-size: 8px;
+    }
+
+    .hotlevel a {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        color: #ac2925;
+        font-family: Simhei;
+        font-size: 15px;
+    }
+
+    .hotlevel a:hover {
+        color: red;
+        text-decoration: none;
+    }
+
+    .date {
+        font-size: 15px;
+        position: absolute;
+        top: -130px;
+        right: 0;
+        color: #fff;
+        font-family: Simhei, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        height: 150px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .date span {
+        position: absolute;
+        left: 40px;
+        top: 130px
+    }
+
+    .date p {
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        color: #ccc;
+        text-align: center;
+    }
+
+    .userList {
+        position: fixed;
+        top: 70px;
+        right: 70px;
+        width: 200px;
+        background-color: #F3F3F3;
+        border-left: 1px solid #DFDFDF;
+        border-right: 1px solid #DFDFDF;
+    }
+
+    .userList ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .userList ul li {
+        width: 100%;
+        height: 49px;
+        cursor: pointer;
+        border-bottom: 1px solid #DFDFDF;
+        position: relative;
+    }
+
+    .userList ul li:hover {
+        background-color: #fff;
+    }
+
+    .userList ul li .headpic {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .userList ul li .headpic img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .userList ul li .un {
+        position: absolute;
+        top: 5px;
+        left: 40px;
+        font-family: Simhei, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .userList ul li .levelStatus {
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        color: #AAAAAA;
+        font-family: Simhei;
+        font-size: 12px;
+    }
+
+    .userList ul li .addAttention {
+        position: absolute;
+        right: 8px;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+        color: #fff;
+        background-color: #B8B7B8;
+        padding-left: 3.5px;
+    }
+
+    .community_user_msg {
+        position: absolute;
+        top: 49px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        font-family: Simhei;
+        color: #ccc;
+        display: none;
+        z-index: 3000
+    }
+
+    .community_user_msg .base_msg {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 150px;
+    }
+
+    .community_user_msg .changePwd {
+        margin: 0 auto;
+        width: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .community_user_msg .nearly_img {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 150px;
+        height: 100px;
+    }
+
+    .community_user_msg .nearly_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ul_hi_mask {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0px;
+        top: 50px;
+        width: 1366px;
+        height: 667px;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .ul_hi_mask .ul_hi_me {
+        border-radius: 8px;
+        width: 300px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: #fff;
+    }
+
+    .ul_hi_mask .ul_hi_me .header {
+        width: 100%;
+        height: 50px;
+        font-family: Simhei;
+        color: #449d44;
+        padding-left: 40px;
+        padding-top: 2px;
+    }
+
+    .ul_hi_mask .ul_hi_me .header h3 {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .ul_hi_mask .ul_hi_me .body {
+        width: 100%;
+        height: 450px;
+        font-family: Simhei;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .imgpreview {
+        width: 100%;
+        height: 280px;
+        margin-bottom: 10px;
+        background-color: #8c8c8c;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .imgpreview .smIcon {
+        position: absolute;
+        left: 110px;
+        top: 110px;
+        font-size: 60px;
+        z-index: 1000;
+    }
+
+    .imgpreview .h_viewport {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 280px;
+        z-index: 1030;
+    }
+
+    .imgpreview .h_viewport img {
+        height: 100%;
+        widht: 100%;
+    }
+
+    .decoration {
+        position: relative;
+    }
+
+    .decoration #uhimg {
+        position: absolute;
+        left: 8px;
+        top: 5px;
+        z-index: 100;
+    }
+
+    .decorationIcon {
+        z-index: 1000;
+        position: absolute;
+        border-radius: 4px;
+        padding-left: 8px;
+        padding-top: 5px;
+    }
+
+    .friendList {
+        position: fixed;
+        top: 50px;
+        left: -160px;
+        width: 200px;
+        height: 100%;
+        background-color: #ac2925;
+    }
+
+    .friend {
+        float: left;
+        width:80%;
+        height:100%;
+    }
+
+    .toggleArea {
+        float: left;
+        width:20%;
+        height:100%;
+        position: relative;
+    }
+    .toggleArea .mytoogle{
+        position: absolute;
+        width:40px;
+        height:40px;
+        top:40%;
+        left:0;
+    }
+    .toggleArea .mytoogle a{
+        color:#fff;
+        font-size: 50px;
+        padding-left: 10px;
+        text-decoration: none;
+    }
+    .toggleArea .mytoogle a:hover{
+        color:#ccc;
+    }
+    .smalltalk{
+        position: fixed;
+        right:20px;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .smalltalk a{
+        color:#ac2925;
+        font-size: 40px;
+    }
+}

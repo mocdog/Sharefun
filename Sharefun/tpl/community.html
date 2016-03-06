@@ -1,0 +1,174 @@
+<!--导航条-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">SHAREFUN</div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav nav navbar-right">
+                <li><a href="#/main">首页</a></li>
+                <li><a href="#/community">分享社区 <span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="#" onclick="event.preventDefault();$('.uploadmask').show();$('.viewport img').remove();">上传照片 <span
+                        class="glyphicon glyphicon-camera"></span></a></li>
+                <li ng-show="!hasHi"><a href="#" onclick="event.preventDefault();$('.ul_hi_mask').show();">上传头像 <span class="glyphicon glyphicon-upload"></span></a></li>
+                <li><a href="#" title="查看个人资料" ng-click="jumpMe()"><span class="glyphicon glyphicon-user"></span>:{{uname}}</a>
+                </li>
+                <li><a href="#" ng-click="logout()">退出账号 <span class="glyphicon glyphicon-off"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--图片展示区-->
+<div class="container">
+    <div class="header">
+        <ul class="mynav list-unstyled">
+            <li class="hactive"><a href="#" ng-click="loadNew()">最新</a></li>
+            <li><a href="#" ng-click="loadhot()">热门</a></li>
+            <li><a href="#" ng-click="loadselected()">精选</a></li>
+            <li><a href="#" ng-click="loadme()"><span class="glyphicon glyphicon-camera"></span>ME</a></li>
+        </ul>
+    </div>
+    <div class="imgList">
+        <div>
+            <div class="mc" ng-repeat="img in imglist">
+                <img ng-click="jumpDetail(img.pid)" ng-src="upload/{{img.path}}" alt=""/>
+                <div class="tag">
+                    <span class="glyphicon glyphicon-tag"></span>
+                    <a onclick="event.preventDefault()" href="#" class="btn">{{img.imgdescribe}}</a>
+                </div>
+                <div ng-show="isHot" class="hotlevel"><a href="#" onclick="event.preventDefault()"><span class="glyphicon glyphicon-heart"></span>{{img.zan}}</a></div>
+                <div ng-show="isNew" class="date img{{img.pid}}" ng-mouseenter="maskdown(img.pid)"  ng-mouseleave ="maskup(img.pid)">
+                    <!--<a href="#/detail" class="btn btn-danger">点击详情</a>-->
+                    <p>
+                        {{img.uname}}<br/>
+                        活跃用户
+                    </p>
+                    <span>{{img.uploadTime | date : 'yyyy/MM/dd'}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4 mypagination1">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--获取活跃列表-->
+<div class="userList">
+    <ul class="list-unstyled">
+        <li ng-repeat="user in userList" ng-mouseenter="showAuthorMsg(user.uname)" ng-mouseleave="hideAuthorMsg(user.uname)">
+            <div class="headpic">
+                <img ng-src="hidir/{{user.hipath}}" />
+            </div>
+            <div class="un">{{user.uname}}</div>
+            <div class="levelStatus">活跃用户</div>
+            <div class="addAttention"><span class="glyphicon glyphicon-plus"></span></div>
+            <div class="community_user_msg user{{user.uname}}">
+                <div class="nearly_img">
+                    近期照片：
+                    <img ng-src="upload/1.jpg" alt=""/>
+                </div>
+                <div class="base_msg">
+                    用户名: {{user.uname}} <br/>
+                    性别:男 <br/>
+                    手机号:18745727339 <br/>
+                </div>
+                <div class="changePwd">
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--上传图片框-->
+<div class="uploadmask">
+    <div class="uploadme">
+        <div class="header">
+            <a href="#" onclick="event.preventDefault();$('.uploadmask').hide()"><span style="font-size: 20px"
+                                                                                       class="pull-right">&times;</span></a>
+
+            <h3><span class="label label-danger">new</span> SHARE照片 <span style="color:#46b8da"
+                                                                          class="glyphicon glyphicon-camera"></span>
+            </h3>
+        </div>
+        <div class="body">
+            <form id="upload">
+                <div class="form-group">
+                    <label for="uimg">上传我的照片到社区</label>
+                    <div class="decoration">
+                        <span class="decorationIcon" style="width:80px;height:34px;background-color: #000;color:#fff;">
+                            请选择文件
+                        </span>
+                        <input type="text" class="form-control"/>
+                        <input required ng-model="imgPath" type="file" id="uimg" name="uimg"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input ng-model="imgdescribe" type="text" class="form-control" id="describe" name="describe" required placeholder="给你您的照片添加一句简短的描述..."/>
+                </div>
+            </form>
+            <div class="imgpreview">
+                <div class="viewport"></div>
+                <span class="smIcon glyphicon glyphicon-camera"></span>
+            </div>
+            <a href="#" ng-click="upload()" class="btn btn-warning btn-block">确认上传</a>
+        </div>
+    </div>
+</div>
+<!--上传头像框-->
+<div class="ul_hi_mask">
+    <div class="ul_hi_me">
+        <div class="header">
+            <a href="#" onclick="event.preventDefault();$('.ul_hi_mask').hide()"><span style="font-size: 20px" class="pull-right">&times;</span></a>
+            <h3>SHARE头像 <span style="color:#46b8da" class="glyphicon glyphicon-camera"></span>
+            </h3>
+        </div>
+        <div class="body">
+            <form id="up_hi">
+                <div class="form-group">
+                    <label for="uhimg">上传我的头像</label>
+                    <div class="decoration">
+                        <span class="decorationIcon" style="width:80px;height:34px;background-color: #000;color:#fff;">
+                            请选择文件
+                        </span>
+                        <input type="text" class="form-control"/>
+                        <input required ng-model="himgPath" type="file" name="uhimg" id="uhimg"/>
+                    </div>
+                </div>
+            </form>
+            <div class="imgpreview">
+                <div class="h_viewport"></div>
+                <span class="smIcon glyphicon glyphicon-camera"></span>
+            </div>
+            <a href="#" ng-click="uploadhi()" class="btn btn-warning btn-block">确认上传</a>
+        </div>
+    </div>
+</div>
+<!--提示信息框-->
+<div class="alertMsg">
+    {{alertMsg}}
+</div>
+<!--好友列表-->
+<div class="friendList">
+    <div class="friend">
+       好友列表区域
+    </div>
+    <div class="toggleArea">
+        <div class="mytoogle">
+            <a id="move_icon" ng-click="showFriend()" href="#">&raquo;</a>
+        </div>
+    </div>
+</div>
+<!--私信框-->
+<div class="smalltalk">
+    <a ng-click="jumpMsg()" ng-mouseenter="msgAnimate()" title="您有好友发来的的留言消息" href="#">
+        <span class="glyphicon glyphicon-envelope"></span>
+    </a>
+</div>

@@ -1,0 +1,58 @@
+<!--<div class="start_bg">-->
+    <!--<canvas id="start_star" width="1366" height="595"></canvas>-->
+    <!--<div class="start_text">-->
+        <!--<div class="start_header">-->
+            <!--<h3>趣分享</h3>-->
+        <!--</div>-->
+        <!--<div class="start_body">-->
+            <!--记录生活的一点一点,来趣分享,分享快乐与泪水-->
+        <!--</div>-->
+        <!--<div class="start_footer">-->
+            <!--<a href="#/main" class="btn btn-info">即可开始分享之旅</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="start_bg_2">
+    <div class="tag_author">
+        <span title="by MR.SUN DESIGN" class="glyphicon glyphicon-pencil"></span>
+    </div>
+    <div class="start_logo">
+        SHARE FUN
+        <p>记录生活.发现美好</p>
+    </div>
+    <div class="logView">
+        <div class="lv_header">
+            <div class="lv_left start_active">
+                <a href="#" ng-click="slidetoLog('')">登录</a>
+            </div>
+            <div class="lv_right">
+                <a href="#" ng-click="slidetoReg()">注册</a>
+            </div>
+        </div>
+        <div class="lv_body">
+            <input id="uname" ng-model="uname" type="text" placeholder="用户名"/>
+            <input id="upwd" ng-model="upwd" type="password" placeholder="密码"/>
+            <span ng-show="showError"><span class="glyphicon glyphicon-alert"></span>{{errorMsg}}</span>
+            <button ng-click="logSharefun()" class="btn-block">登录</button>
+        </div>
+        <div class="lv_body_register">
+            <input id="rname" ng-model="rname" type="text" placeholder="用户名"/>
+            <input id="rpwd" ng-model="rpwd" type="password" placeholder="设置密码"/>
+            <span ng-show="canShow">
+                <span style="color:#9DC000" ng-show="isOk" class="glyphicon glyphicon-ok"></span>
+                <span style="color:#a94442" ng-show="isFalse" class="glyphicon glyphicon-remove"></span>
+                {{reg__msg}}
+            </span>
+            <button ng-click="regSharefun()" class="btn-block">注册</button>
+        </div>
+        <div class="lv_footer">
+            <span class="glyphicon glyphicon-cog"></span>
+            <span style="color:#ccc">ShareFun哈PCI2301-c备</span>
+        </div>
+    </div>
+    <div class="changeBg">
+        <a href="#" ng-click="slideBgLeft()"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        change bc
+        <a href="#" ng-click="slideBgRight()"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+</div>
